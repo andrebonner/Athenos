@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1360463214 source:c:\users\andre\documents\c and c++\athenos\resource.rc
+	"resource.h"
+
+1360465480 c:\users\andre\documents\c and c++\athenos\resource.h
+
+1360505158 source:c:\users\andre\documents\c and c++\athenos\main.cpp
+	<windows.h>
+	"aboutDlg.h"
+	"toolbarDlg.h"
+	<commctrl.h>
+	<stdio.h>
+	"resource.h"
+
+1360436987 c:\users\andre\documents\c and c++\athenos\aboutdlg.h
+	"resource.h"
+
+1360461904 c:\users\andre\documents\c and c++\athenos\toolbardlg.h
+	"resource.h"
+

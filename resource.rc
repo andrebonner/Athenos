@@ -1,0 +1,66 @@
+#include "resource.h"
+
+// APPLICATION ICONS
+IDI_MAIN_ICON ICON "my_icon.ico"
+IDI_MAIN_ICON2 ICON "my_icon2.ico"
+
+IDI_ABOUT_ICON BITMAP "Icon.png"
+
+// MAIN MENU
+IDR_MAIN_MENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New", ID_FILE_NEW
+        MENUITEM "&Open", ID_FILE_OPEN
+        MENUITEM "&Save", ID_FILE_SAVE
+        MENUITEM "&Print", ID_FILE_PRINT
+        MENUITEM "E&xit", ID_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Undo", ID_EDIT_UNDO
+        MENUITEM "Redo", ID_EDIT_REDO
+        MENUITEM "Cu&t", ID_EDIT_CUT
+        MENUITEM "&Copy", ID_EDIT_COPY
+        MENUITEM "Paste", ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Fullscreen", ID_VIEW_FULLSCREEN
+        MENUITEM "Statusbar", ID_VIEW_STATUSBAR
+    END
+        POPUP "&Tools"
+    BEGIN
+        MENUITEM "Options", ID_TOOLS_OPTIONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Contents", ID_HELP_CONTENTS
+        MENUITEM "&About", ID_HELP_ABOUT
+    END
+END
+
+// ABOUT DIALOG
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 239, 66
+CAPTION "About Box"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&OK",ID_OK,174,35,50,14
+    GROUPBOX        "About this program...",IDC_STATIC,7,7,225,52
+    CTEXT           "An example program showing how to use Dialog Boxes\r\n\r\nby techzenth (C) 2013",IDC_BLA,16,18,144,33
+END
+
+// TOOLBAR DIALOG
+IDD_TOOLBAR DIALOGEX 0, 0, 98, 52
+CAPTION "My Dialog Toolbar"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Press This Button",IDC_PRESS,7,7,84,14
+    PUSHBUTTON      "&Or This One",IDC_OTHER,7,31,84,14
+END
+
+STRINGTABLE
+BEGIN
+    1, "This is a string"
+END
