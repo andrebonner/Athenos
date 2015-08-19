@@ -5,7 +5,7 @@
 #include "aboutDlg.h"
 #include "toolbarDlg.h"
 
-#include <commctrl.h>
+//#include <commctrl.h>
 #include <stdio.h>
 #include "resource.h"
 
@@ -24,7 +24,7 @@ int WINAPI WinMain (HINSTANCE hThisInstance,
                     int nCmdShow)
 {
 
-    InitCommonControls();
+    //InitCommonControls();
 
     HWND hwnd;               /* This is the handle for our window */
     MSG messages;            /* Here messages to the application are saved */

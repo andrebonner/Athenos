@@ -21,7 +21,7 @@ BOOL CALLBACK ToolDlgProc(HWND hwndD, UINT Message, WPARAM wParam, LPARAM lParam
                 case IDC_OTHER:
                     MessageBox(hwndD, "Bye!", "This is also a message",
                         MB_OK | MB_ICONEXCLAMATION);
-                        EndDialog(hwndD, NULL);
+                        EndDialog(hwndD, IDC_OTHER);
                 break;
             }
         break;
